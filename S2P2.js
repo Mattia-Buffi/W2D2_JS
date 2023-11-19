@@ -77,7 +77,7 @@ console.log("Buongiorno "+utenteCheEffettuaLAcquisto.name)
 for (let element of prices) {
   cartValue+=element;
 }
-console.log("Totale carrello: "+cartValue);
+console.log("Il Totale del tuo carrello è: "+cartValue);
 //analisi sconto
 if(utenteCheEffettuaLAcquisto.isAmbassador) {
   couponValue=cartValue*(discountPerc);
@@ -86,7 +86,7 @@ if(utenteCheEffettuaLAcquisto.isAmbassador) {
 }
 //analisi spedizione
 if(cartValue>=deliveryBench){
-  console.log("Congratulazioni la spedizione è gratuita");
+  console.log("Congratulazioni! La spedizione è gratuita");
   totalValue=cartValue;
 }else{
   //allert con valore per spedizione gratis
